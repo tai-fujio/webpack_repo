@@ -1,3 +1,3 @@
-import test from './test';
+import sample from './sample.js';
 import '../stylesheets/main.css';
-test();
+sample();
