@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports= {
+  // mode: 'production',
+  mode: 'development',
   devtool: 'source-map',
   entry : './src/javascripts/main.js',
   output: {
@@ -21,6 +23,7 @@ module.exports= {
             options : {
               presets: [
                 ['@babel/preset-env',{'targets': '>5%, not dead'}],
+                ['@babel/preset-react'],
               ],
             },
           },
@@ -35,6 +38,9 @@ module.exports= {
           },
           {
             loader: 'css-loader',
+            options: {
+              // sourceMap: true,
+            }
           },
           {
             loader: 'postcss-loader',
@@ -45,7 +51,7 @@ module.exports= {
         ],
       },
       {
-        test: /\.(jpg|png)/,
+        test: /\.(jpg|png|jpeg)/,
         use: [
           {
             loader: 'file-loader',
@@ -53,6 +59,15 @@ module.exports= {
               esModule: false,
               name: 'images/[name].[ext]',
             },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 20,
+              }
+            }
           },
         ],
       },

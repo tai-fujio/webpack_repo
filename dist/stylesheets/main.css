@@ -1,32 +1,4 @@
-.footer {
-  background-color: grey; }
-
-::-webkit-input-placeholder {
-  color: grey; }
-
-::-moz-placeholder {
-  color: grey; }
-
-:-ms-input-placeholder {
-  color: grey; }
-
-::-ms-input-placeholder {
-  color: grey; }
-
-::placeholder {
-  color: grey; }
-
-body {
-  color: blue;
-  margin-top: 200px; }
-
-.content {
-  margin-right: 16px; }
-  .content .title, .content .title-lg {
-    font-size: 24px;
-    color: red; }
-  .content .title-lg {
-    font-size: 32px; }
+.footer{background-color:grey}::-webkit-input-placeholder{color:grey}::-moz-placeholder{color:grey}:-ms-input-placeholder{color:grey}::-ms-input-placeholder{color:grey}::placeholder{color:grey}body{color:blue;margin-top:200px}.content{margin-right:16px}.content .title,.content .title-lg{font-size:24px;color:red}.content .title-lg{font-size:32px}
 
 
 /*# sourceMappingURL=main.css.map*/
