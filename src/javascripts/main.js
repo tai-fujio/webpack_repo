@@ -1,3 +1,3 @@
 import sample from './sample.js';
-import '../stylesheets/main.css';
+import '../stylesheets/main.scss';
 sample();
