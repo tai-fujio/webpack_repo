@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+const App2 = () => {
 const App = (props) => {
   return(
     <div>
@@ -18,4 +18,6 @@ if(root) {
 } else {
   console.log('No root.')
 }
-export default react1;
+
+}
+export default App2;
