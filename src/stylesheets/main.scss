@@ -1,18 +1,65 @@
 @import './footer.scss';
+@import './menu.scss';
 @mixin set-margin($direction,$value) {
   margin-#{$direction}: #{$value}px;
 }
 $text-color: blue;
+$icon-size: 64px;
+
+html, body, div, p, img, h1, h2, h3, h4, h5 {
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-size:20px;
+  font-family: sans-serif;
+}
+
+h1{
+  font-size: 2em;
+}
+
+.container {
+  width: 980px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.main-image {
+  background-image: url('../images/original.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 2em;
+  margin: 1em 0;
+}
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+  border-radius: $icon-size/2;
+  padding: 4px;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
 body {
   color: $text-color;
   @include set-margin(top,200);
 }
 
-div {
-  #container {
-  width:100%;
-  }
-}
+// div {
+//   #container {
+//   width:100%;
+//   }
+// }
 
 div {
   #image1 {
@@ -39,9 +86,13 @@ div {
   @include set-margin(right,16);
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
- }
+::placeholder {
+  color:turquoise;
+}
+
+// img {
+//   max-width: 100%;
+//   max-height: 100%;
+//   width: auto;
+//   height: auto;
+//  }
